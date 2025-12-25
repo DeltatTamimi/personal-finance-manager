@@ -574,19 +574,19 @@ def seed_sample_data():
             pass
 
     transactions = [
-        ("TXN001", "ACC001", "2024-07-15", 150.00, "expense", "Groceries", "Weekly shopping"),
-        ("TXN002", "ACC001", "2024-07-20", 50.00, "expense", "Transport", "Gas"),
-        ("TXN003", "ACC001", "2024-08-10", 200.00, "expense", "Utilities", "Electric bill"),
-        ("TXN004", "ACC001", "2024-08-15", 80.00, "expense", "Entertainment", "Movies"),
-        ("TXN005", "ACC001", "2024-09-05", 120.00, "expense", "Groceries", "Weekly shopping"),
-        ("TXN006", "ACC001", "2024-09-20", 300.00, "expense", "Shopping", "Clothes"),
-        ("TXN007", "ACC001", "2024-10-10", 175.00, "expense", "Groceries", "Weekly shopping"),
-        ("TXN008", "ACC001", "2024-10-25", 90.00, "expense", "Dining", "Restaurant"),
-        ("TXN009", "ACC001", "2024-11-05", 250.00, "expense", "Utilities", "Internet + Phone"),
-        ("TXN010", "ACC001", "2024-11-15", 100.00, "expense", "Entertainment", "Concert tickets"),
-        ("TXN011", "ACC001", "2024-12-01", 180.00, "expense", "Groceries", "Weekly shopping"),
-        ("TXN012", "ACC001", "2024-12-10", 500.00, "expense", "Shopping", "Christmas gifts"),
-    ]
+        ("TXN001", "ACC001", "2025-07-15", 150.00, "expense", "Groceries", "Weekly shopping"),
+        ("TXN002", "ACC001", "2025-07-20", 50.00, "expense", "Transport", "Gas"),
+        ("TXN003", "ACC001", "2025-08-10", 200.00, "expense", "Utilities", "Electric bill"),
+        ("TXN004", "ACC001", "2025-08-15", 80.00, "expense", "Entertainment", "Movies"),
+        ("TXN005", "ACC001", "2025-09-05", 120.00, "expense", "Groceries", "Weekly shopping"),
+        ("TXN006", "ACC001", "2025-09-20", 300.00, "expense", "Shopping", "Clothes"),
+        ("TXN007", "ACC001", "2025-10-10", 175.00, "expense", "Groceries", "Weekly shopping"),
+        ("TXN008", "ACC001", "2025-10-25", 90.00, "expense", "Dining", "Restaurant"),
+        ("TXN009", "ACC001", "2025-11-05", 250.00, "expense", "Utilities", "Internet + Phone"),
+        ("TXN010", "ACC001", "2025-11-15", 100.00, "expense", "Entertainment", "Concert tickets"),
+        ("TXN011", "ACC001", "2025-12-01", 180.00, "expense", "Groceries", "Weekly shopping"),
+        ("TXN012", "ACC001", "2025-12-10", 500.00, "expense", "Shopping", "Christmas gifts"),
+                    ]
 
     for txn in transactions:
         try:
@@ -723,6 +723,7 @@ def validate_token(token):
     close_db_connection(conn)
 
     return user is not None
+
 
 
 def logout_user(token):
